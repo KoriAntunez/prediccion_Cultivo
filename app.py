@@ -3,7 +3,7 @@ from flask import Flask, request, jsonify, render_template, url_for
 import pickle
 from sklearn import svm
 import streamlit as st
-
+from markupsafe import escape
 
 # Path del modelo preentrenado
 MODEL_PATH = 'models/pickle_model.pkl'
