@@ -3,7 +3,7 @@ from flask import Flask, request, jsonify, render_template, url_for
 import pickle
 from sklearn import svm
 import streamlit as st
-from markupsafe import escape
+
 
 # Path del modelo preentrenado
 MODEL_PATH = 'models/pickle_model.pkl'
@@ -29,8 +29,23 @@ def main():
     
     # Título
     html_temp = """
+    
     <h1 style="color:#181082;text-align:center;">SISTEMA DE RECOMENDACIÓN PARA CULTIVO </h1>
     </div>
+    <h3 style="color:#181082;text-align:center;">INTEGRANTES:</h3> 
+    </br>
+    <h3 style="color:#181082;text-align:center;">
+    Antúnez Palomino, Kori Xiomara
+        </br>
+    Cortez Rosas, Ingrid Fiorella
+        </br>
+    Gómez Cavero, Mishell	
+        </br>
+    Gonzales Julluni, Alexandra
+        </br>
+    Santiago Arapa, Naysha Solange</h3>
+
+ </h3>    
     """
     st.markdown(html_temp,unsafe_allow_html=True)
 
