@@ -4,3 +4,4 @@ numpy==1.20.3
 pandas==1.2.4
 scikit-learn==0.24.1
 streamlit==0.82.0
+markupsafe==2.0.1
